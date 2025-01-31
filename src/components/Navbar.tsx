@@ -28,11 +28,11 @@ const Navbar = () => {
         visible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#" className="text-3xl font-bold font-outfit tracking-tight hover:text-gray-700 transition-colors">
+      <div className="container mx-auto px-2 py-4 flex justify-between items-center">
+        <a href="#" className="text-3xl font-bold font-outfit tracking-tight hover:text-gray-700 transition-colors pl-2">
           KetoAI
         </a>
-        <div className="flex gap-8 items-center">
+        <div className="flex gap-6 items-center pr-2">
           <button 
             onClick={() => scrollToSection('how-it-works')}
             className="text-gray-600 hover:text-black font-inter text-sm transition-colors"
