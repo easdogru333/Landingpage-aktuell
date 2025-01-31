@@ -32,7 +32,9 @@ const Navbar = () => {
         <a href="#" className="text-3xl font-bold font-outfit tracking-tight hover:text-gray-700 transition-colors pl-2">
           KetoAI
         </a>
-        <div className="flex gap-6 items-center pr-2">
+        
+        {/* Center Navigation */}
+        <div className="flex-1 flex justify-center gap-8">
           <button 
             onClick={() => scrollToSection('how-it-works')}
             className="text-gray-600 hover:text-black font-inter text-sm transition-colors"
@@ -45,17 +47,18 @@ const Navbar = () => {
           >
             Features
           </button>
-
-          <a
-            href="https://keto-ai.vercel.app/app"
-            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-black via-gray-800 to-black px-6 py-3 text-sm font-semibold font-outfit text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-800 hover:border-gray-700"
-          >
-            <span>Try Beta</span>
-            <svg className="w-5 h-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
-          </a>
         </div>
+
+        {/* Right Button */}
+        <a
+          href="https://keto-ai.vercel.app/app"
+          className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-black via-gray-800 to-black px-6 py-3 text-sm font-semibold font-outfit text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-800 hover:border-gray-700"
+        >
+          <span>Try Beta</span>
+          <svg className="w-5 h-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+          </svg>
+        </a>
       </div>
     </nav>
   );
