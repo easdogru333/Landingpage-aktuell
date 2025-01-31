@@ -46,22 +46,6 @@ const Navbar = () => {
             Features
           </button>
 
-          {/* Navigation Buttons */}
-          <div className="flex items-center gap-6">
-            <button
-              onClick={() => scrollToSection('how-it-works')}
-              className="text-gray-600 hover:text-gray-700 font-inter text-sm transition-colors"
-            >
-              Back
-            </button>
-            <button
-              onClick={() => scrollToSection('features')}
-              className="text-gray-600 hover:text-gray-700 font-inter text-sm transition-colors"
-            >
-              Logout
-            </button>
-          </div>
-
           <a
             href="https://keto-ai.vercel.app/app"
             className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-black via-gray-800 to-black px-6 py-3 text-sm font-semibold font-outfit text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-800 hover:border-gray-700"
